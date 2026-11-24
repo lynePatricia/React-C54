@@ -24,6 +24,18 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  ligneControle:{
+    flexDirection: 'row',
+    justifyContent: "space-around",
+    backgroundColor: 'black',
+    height: 50, 
+    alignItems: 'center'
+  }, 
+
+  ecran:{
+    justifyContent: "space-around"
+  },
+
   container: {
     flex: 1,
     backgroundColor: '#fff',
