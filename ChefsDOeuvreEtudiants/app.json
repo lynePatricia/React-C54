@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "nomDevotreProjet",
-    "slug": "nomDevotreProjet",
+    "name": "ChefsDOeuvre",
+    "slug": "ChefsDOeuvre",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
