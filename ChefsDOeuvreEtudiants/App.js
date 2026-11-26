@@ -60,14 +60,12 @@ function Galerie() {
           <Text style={styles.text}>{affiche ? "fermer la description" : "afficher la description"}</Text>
       </TouchableOpacity>
       
-      <ScrollView style={{ maxHeight: 150 }}>
-        <Text>
+      <ScrollView contentContainerStyle={styles.scroll} >
+        <Text style={styles.text1}>
           {affiche ? oeuvre.desc : ""}
         </Text>
       </ScrollView>
       
-     
-     
     </View>
   );
 }
@@ -83,7 +81,7 @@ const styles = StyleSheet.create(
 
     main : {
       justifyContent: 'center',
-      flex:1,
+      alignContent: 'center', 
       alignItems:'center',
       marginTop:20
     },
@@ -94,7 +92,7 @@ const styles = StyleSheet.create(
     },
 
     bouton : {
-      backgroundColor : "#00008b",
+      backgroundColor : "blue",
       borderRadius: 5, 
       paddingVertical: 10,
       paddingHorizontal: 16,
@@ -103,7 +101,17 @@ const styles = StyleSheet.create(
     text: {
       color: "white", 
     },
+
+    text1:{
+      fontSize: 20,
+    },
    
+    scroll: {
+      textAlign: 'justify', 
+      margin: 5,
+      flex:1
+
+    }
   }
 )
 export default Galerie;
